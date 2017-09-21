@@ -1,9 +1,8 @@
 language: node_js
-script:
-  # first dump all the remote content as local files
-  - ./node_modules/.bin/dato dump
-  # then generate the website
-  - node index.js
+sudo: false
+node_js:
+  - mode
+  - '6.6'
 deploy:
   provider: pages
   skip_cleanup: true
