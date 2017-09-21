@@ -1,7 +1,7 @@
 language: node_js
-script:
-  - npm install
-  - node index.js
+node_js:
+  - '6'
+script: node index.js
 deploy:
   provider: pages
   skip_cleanup: true
