@@ -1,24 +1,148 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>{{ title }}</title>
-  <meta name="description" content="{{ description }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{title}}</title>
+    <meta name="Nova theme" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,700,300,300italic|Lato:300,400,700,900|Poppins:300,400,500,600,700" />
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/responsive.css"/>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css?ver=4.5.0" />
 </head>
 <body>
-  <header>
-    <p>
-      <a href="/">Home</a>
-    </p>
-  </header>
-  <h1>{{ title }}</h1>
-  <p>{{ description }}</p>
+    <header>
+        <div>
+            <img class="strips" src="assets/images/strips.png">
+        </div>
+        <div class="container">
+            <div class="header-container header">
+                <a class="navbar-brand logo" href="#"> <img class="logo" src="assets/images/logo.svg"/> </a>
+                <div class="header-right">
+                    <a class="navbar-item" href="#about">{{about.title}}</a>
+                    <a class="navbar-item" href="#news">{{news.title}}</a>
+                    <a class="navbar-item" href="#team">{{team.title}}</a>
+                    <a class="navbar-item" href="#contact">{{contact.title}}</a>
+                </div>
+            </div>
+            <div class="hero row">
+                <div class="col-sm-12">
+                    <h1 class="header-headline bold">{{hero.title}}</h1>
+                    <div class="section-description">{{hero.text}}</div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-  {{{ contents }}}
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>{{about.title}}</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 ml-auto mr-auto">{{about.text}}</div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>Generated with {{ generator }} &mdash; <a href="{{ url }}">{{ url }}</a></p>
-  </footer>
+    <section id="news">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>{{news.title}}</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 ml-auto mr-auto">{{news.text}}</div>
+            </div>
+        </div>
+    </section>
 
+    <section id="team">
+        <h2>{{team.text}}</h2>
+
+        <div class="team-container row">
+            <div class="col-sm-4 team-member">
+                <img src="assets/images/cto.png">
+                <div class="team-member-text">
+                    <h4 class="team-member-position light">CTO</h4>
+                    <h5 class="bold">Johnny B Good</h5>
+                    <p class="light">The brains behind the whole operation</p>
+                    <a href="http://www.twitter.com"><img class="team-social-icon" src="assets/images/team-twitter.svg"></a>
+                    <a href="http://www.facebook.com"><img class="team-social-icon"
+                                                           src="assets/images/team-facebook.svg"></a>
+                    <a href="https://plus.google.com/"><img class="team-social-icon"
+                                                            src="assets/images/team-google.svg"></a>
+                </div>
+            </div>
+
+            <div class="col-sm-4 team-member">
+                <img src="assets/images/ceo.png">
+                <div class="team-member-text">
+                    <h4 class="team-member-position light">CEO</h4>
+                    <h5 class="bold">Roll Over Beethoven</h5>
+                    <p class="light">The one that puts it all together </p>
+                    <a href="http://www.twitter.com"><img class="team-social-icon" src="assets/images/team-twitter.svg"></a>
+                    <a href="http://www.facebook.com"><img class="team-social-icon"
+                                                           src="assets/images/team-facebook.svg"></a>
+                    <a href="https://plus.google.com/"><img class="team-social-icon"
+                                                            src="assets/images/team-google.svg"></a>
+                </div>
+            </div>
+
+            <div class="col-sm-4 team-member">
+                <img src="assets/images/cfo.png">
+                <div class="team-member-text">
+                    <h4 class="team-member-position light">CFO</h4>
+                    <h5 class="bold">Chuck Berry</h5>
+                    <p class="light">The guy with his hand on the wallet</p>
+                    <a href="http://www.twitter.com"><img class="team-social-icon" src="assets/images/team-twitter.svg"></a>
+                    <a href="http://www.facebook.com"><img class="team-social-icon"
+                                                           src="assets/images/team-facebook.svg"></a>
+                    <a href="https://plus.google.com/"><img class="team-social-icon"
+                                                            src="assets/images/team-google.svg"></a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>{{contact.title}}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 ml-auto mr-auto">{{contact.text}}</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <address class="row">
+                <div class="col-sm-8 webscope ml-auto">
+                    <a href="mailto:{{contact.email}}">{{contact.email}}</a>
+                </div>
+                <div class="col-sm-2">
+                    <div class="float-right">
+                        <a href="{{contact.twitter}}"><img class="social-link" src="assets/images/twitter.svg"/></a>
+                        <a href="{{contact.facebook}}"><img src="assets/images/facebook.svg"/></a>
+                        <a href="{{contact.linkedin}}"><img src="assets/images/linkedin.svg"/></a>
+                    </div>
+                </div>
+            </address>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
