@@ -1,10 +1,5 @@
-sudo: false
 language: node_js
-node_js:
-  - '6'
-script:
-  - npm install
-  - node index.js
+script: node index.js
 deploy:
   provider: pages
   skip_cleanup: true
