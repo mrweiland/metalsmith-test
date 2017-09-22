@@ -16,6 +16,20 @@ news:
 team:
   title: The Team
   people:
+    - name: Jon Wikman
+      title: CTO
+      desc: The one that puts it all together
+      pic: assets/images/jon-wikman.png
+      linkedin: https://se.linkedin.com/in/jonwikman
+      twitter: https://twitter.com/flaxhaxx
+      github: https://github.com/FlaxHaxx
+    - name: Tobias Larsson
+      title: CEO
+      desc: The guy!
+      pic: assets/images/tobias-larsson.png
+      linkedin:
+      twitter:
+      github:
 
 contact:
   title: Contact
