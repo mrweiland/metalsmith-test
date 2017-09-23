@@ -9,7 +9,7 @@ The Northbricks.com website. Commit to master branch will trigger e new deployme
 
 ## Build
 
-Build using `make`.
+Build with `make`.
 ```sh
 make build
 ```
