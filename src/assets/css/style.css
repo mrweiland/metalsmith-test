@@ -5,7 +5,7 @@ body {
     line-height: 26px;
     font-weight: 400;
     font-size: 16px;
-    color: #8c9597
+    color: #8c9597;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -75,8 +75,7 @@ section {
 
 footer {
     background-color: #464646;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 
 footer a, footer a:hover {
