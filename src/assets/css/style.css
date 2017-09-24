@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 body {
-    font-family: Lato, sans-serif;
+    /* font-family: sans-serif; */
     line-height: 26px;
     font-weight: 400;
     font-size: 16px;
-    color: #8c9597;
+    color: #000;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    font-family: Poppins;
+    /* font-family: Poppins; */
 }
 
 h1 {
@@ -30,16 +30,17 @@ h2, h3 {
 }
 
 header {
-    background: url(../images/hero-bg.jpg);
+    /* background: url(../images/northbricks/social/youtube-cover.jpg); */
     background-attachment: fixed;
     background-position:center;
+    background-color:#FEC232;
     background-size:cover;
     background-repeat:no-repeat;
     padding-bottom: 60px;
 }
 
 header h1 {
-    color: #fff;
+    color: #000;
 }
 
 header .section-description {
@@ -47,8 +48,8 @@ header .section-description {
     line-height:26px;
     margin-bottom:60px;
     font-size:16px;
-    color:#fff;
-    font-family:Lato;
+    color:#2B2B2B;
+    /* font-family:Lato; */
     font-weight:400
 }
 
@@ -58,10 +59,11 @@ section {
 }
 
 #news {
-    background-color: #222f36;
+    background-color: #394E58;
     padding-top: 40px;
     padding-bottom: 80px;
     padding-bottom: 90px;
+    color: #fff;
     position: relative;
 }
 
@@ -89,7 +91,7 @@ footer a, footer a:hover {
 }
 
 .navbar-item {
-    color: #ffffff;
+    color: #000;
     padding: 10px;
 }
 
@@ -108,7 +110,7 @@ footer a, footer a:hover {
 }
 
 .header {
-    padding-top: 35px;
+    padding-top: 5px;
     width: 100%;
     height: 100px;
     position: relative;
@@ -116,9 +118,9 @@ footer a, footer a:hover {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 75px;
     padding-left: 0;
-    padding-top: 5px;
+    padding-top: 0px;
 }
 
 .header-btn {
@@ -199,9 +201,10 @@ footer a, footer a:hover {
 }
 
 .header-headline {
-    padding-top: 0;
+    padding-top: 5px;
     padding-bottom: 15px;
     text-align: center;
+    color: #484A4B;
 }
 
 .header-running-text {
